@@ -7,14 +7,14 @@
   </head>
   <body>
 	<h1>Quizzes</hq>
-	<a href="/">Home</a>
-	<a href="/credits"> Credits</a>
+	<p><a href="/">Home</a></p>
+	<p><a href="/credits"> Credits</a></p>
 
 	<ul>
 	    <% for (let i in quizzes) { %>
 	    <% const quiz = quizzes[i]; %>
 	    <li>
-	        <%= quiz.question %> : <%= quiz.answer %>
+	        Pregunta número <%= quiz.id %> => <%= quiz.question %> : <%= quiz.answer %>
 	    </li>
 	    <% } %>
 	</ul>
